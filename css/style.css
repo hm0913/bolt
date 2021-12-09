@@ -99,7 +99,8 @@ body {
 }
 
 .summary-img-area {
-  width: 30%;
+  width: 40%;
+  text-align: center;
 }
 
 .summary-img {
@@ -139,6 +140,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .work-content-item {
@@ -148,7 +150,7 @@ body {
 }
 
 .work-content-item:nth-child(-n+3) {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .work-content-item:nth-child(3n+1) {
@@ -278,3 +280,167 @@ body {
   text-align: right;
 }
 /* フッター */
+
+
+/* タブレット用レスポンシブ */
+@media screen and (max-width: 1199px) {
+  /* 共通 */
+  .inner {
+    width: 97%;
+  }
+  /* 共通 */
+
+
+  /* ワットエリア */
+  .theme-inner {
+    padding: 50px 0 25px;
+  }
+  
+  .summary {
+    display: block;
+  }
+  
+  .summary-img-area {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .summary-textarea {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /* ワットエリア */
+  
+  
+  /* ワークエリア */
+  .work-content-list {
+    display: block;
+  }
+
+  .work-content-item {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+
+  .work-content-item:nth-child(4n) {
+    margin-top: 80px;
+  }
+
+  .work-bottom-area {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .work-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .work-btn-area {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .work-btn {
+    display: inline-block;
+    text-align: center;
+  }
+  /* ワークエリア */
+
+
+  /* スキルエリア */
+  .skills-content-area {
+    display: block;
+  }
+
+  .skills-list {
+    margin-left: 0px;
+    margin-top: 88px;
+  }
+
+  .skills-list:first-child {
+    margin-top: 0;
+  }
+  /* スキルエリア */
+}
+/* タブレット用レスポンシブ */
+
+
+
+
+/* スマホ用レスポンシブ */
+@media screen and (max-width: 767px) {
+  /* 共通 */
+  .inner {
+    width: 97%;
+  }
+  /* 共通 */
+
+  /* ヘッダー */
+  .header-btn {
+    display: none;
+  }
+
+  .menu {
+    width: 40px;
+    height: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .menu-btn,
+  .menu-btn:before,
+  .menu-btn:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: #ddd;
+    position: absolute;
+  }
+
+  .menu-btn:before {
+    bottom: -10px;
+  }
+
+  .menu-btn:after {
+    top: 20px;
+  }
+  /* ヘッダー */
+
+
+  /* タイトル */
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+  /* タイトル */
+
+
+  /* ワークエリア */
+  .work-text {
+    width: 100%;
+  }
+  /* ワークエリア */
+
+
+  /* SNSエリア */
+  .sns-inner {
+    padding: 50px 0;
+  }
+
+  .icon-group {
+    display: block;
+  }
+
+  .icon-list {
+    width: 100%;
+  }
+  /* SNSエリア */
+
+}
+/* スマホ用レスポンシブ */
