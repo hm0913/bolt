@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10000;
 }
 
 .basic-bg {
@@ -37,8 +37,7 @@ body {
 
 .inner {
   width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 /* 共通 */
 
@@ -140,19 +139,19 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 40px;
 }
 
 .work-content-item {
   margin-left: 100px;
   font-size: 0;
-}
-
-.work-content-item:nth-child(n+4) {
   margin-top: 80px;
 }
 
-.work-content-item:nth-child(3n+1), .work-content-item:nth-child(4) {
+.work-content-item:nth-child(-n+3) {
+  margin-top: 40px;
+}
+
+.work-content-item:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -170,7 +169,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 90px;
+  margin-top: 90px;
 }
 
 .work-text {
@@ -219,11 +218,11 @@ body {
   text-align: center;
 }
 
-.skills-content {
+.skills-list {
   margin-left: 180px;
 }
 
-.skills-content:first-child {
+.skills-list:first-child {
   margin-left: 0;
 }
 
@@ -232,10 +231,6 @@ body {
   font-size: 16px;
 }
 
-.icon-group {
-  display: flex;
-  justify-content: center;
-}
 
 .skills-text {
   margin-top: 15px;
@@ -248,11 +243,20 @@ body {
   padding: 200px 0;
 }
 
-.sns-icon {
+.icon-group {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-list {
   width: 185px;
   font-size: 40px;
   text-align: center;
   line-height: 100px;
+}
+
+.sns-icon {
+  display: block;
   text-decoration: none;
   color: #74cfae;
   transition: .3s;
